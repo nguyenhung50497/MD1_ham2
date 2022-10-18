@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Chuyển đổi feet sang meter</h1>
+<br>
+<input type="number" name="feet" id="feet" placeholder="Feet" oninput="feetToMeter(this.value)"
+       onchange="feetToMeter(this.value)">
+<p>Kết quả: <span id="result1"></span>m</p>
+<br>
+<h1>Chuyển đổi meter sang feet</h1>
+<br>
+<input type="number" name="meter" id="meter" placeholder="Meter" oninput="meterToFeet(this.value)"
+       onchange="meterToFeet(this.value)">
+<p>Kết quả: <span id="result2"></span>f</p>
+<script>
+  function feetToMeter(feet) {
+    let mt = feet * 0.305;
+    document.querySelector('#result1').innerHTML = mt;
+  }
+  function meterToFeet(meter) {
+    let ft = meter * 3.279;
+    document.querySelector('#result2').innerHTML = ft;
+  }
+</script>
+</body>
+</html>
