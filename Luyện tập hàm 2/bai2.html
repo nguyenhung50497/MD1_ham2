@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let r = +prompt('Nhập bán kính hình tròn(cm):');
+    let pi = Math.PI;
+    chuvi();
+    dientich();
+    function chuvi() {
+        let chuvi = 2*r*pi;
+        alert(`Chu vi hình tròn bán kính ${r}(cm) là: ${chuvi}(cm)`);
+    }
+    function dientich() {
+        let dientich = (r**2)*pi;
+        alert(`Diện tích hình tròn bán kính ${r}(cm) là: ${dientich}(cm2)`);
+    }
+</script>
+</body>
+</html>

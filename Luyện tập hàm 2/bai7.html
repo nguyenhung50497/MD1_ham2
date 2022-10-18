@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="numbera">Nhập số a:</label>
+<input type="number" name="numbera" id="numbera">
+<label for="numberb">Nhập số b:</label>
+<input type="number" name="numberb" id="numberb">
+<button onclick="hoandoi()">Action</button>
+<p>Số a: <span id="a"></span></p>
+<p>Số b: <span id="b"></span></p>
+<script>
+    function hoandoi() {
+    let a = document.querySelector('#numbera').value;
+    let b = document.querySelector('#numberb').value;
+        document.querySelector('#a').innerHTML = b;
+        document.querySelector('#b').innerHTML = a;
+    }
+</script>
+</body>
+</html>
