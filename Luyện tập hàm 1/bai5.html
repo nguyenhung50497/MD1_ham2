@@ -5,6 +5,27 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    findStar()
+    function findStar() {
+        let array1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let array2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        let a = prompt('Nhập tên ngôi sao:');
+        let flag = true;
+        for (let i=0; i<array1.length; i++) {
+            if (a == array1[i]) {
+                alert(array2[i]);
+                flag =true;
+                break;
+            }
+            else {
+                flag = false;
+            }
+        }
+        if (flag == false) {
+            alert('Không tìm thấy.');
+        }
+    }
+</script>
 </body>
 </html>
