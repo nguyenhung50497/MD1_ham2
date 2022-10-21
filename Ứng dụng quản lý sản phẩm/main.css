@@ -1,13 +1,14 @@
-div {
+#div1 {
     width: 40%;
-}
-#right {
-    width: 200px;
-    float: left;
 }
 #left {
     width: 200px;
+    float: left;
+}
+#right {
+    width: 200px;
     float: right;
+    text-align: right;
 }
 input {
     width: 300px;
@@ -17,4 +18,16 @@ input {
 button {
     width: 100px;
     height: 35px;
+    font-size: 24px;
+    background-color: #00a600;
+    color: white;
+    border-radius: 7px;
+    border: none;
+}
+table {
+    width: 100%;
+    text-align: left;
+}
+th {
+    width: 400px;
 }
