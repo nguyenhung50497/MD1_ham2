@@ -29,5 +29,11 @@ table {
     text-align: left;
 }
 th {
-    width: 400px;
+    width: 300px;
+}
+#div2 {
+    width: 30%;
+    float: right;
+    margin-right: 25%;
+    margin-top: -100px;
 }
