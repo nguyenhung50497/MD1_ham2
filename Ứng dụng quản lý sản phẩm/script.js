@@ -1,5 +1,5 @@
 let row = '';
-let array = [1,2,3,4,5,6,7,8,9];
+let array = [];
 let amounts = 0;
 function displayProduct() {
     amounts++;
