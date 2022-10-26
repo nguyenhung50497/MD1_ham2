@@ -7,8 +7,8 @@ function displayProduct() {
     for (let i = 0; i < array.length; i++) {
         str += `<tr>
                 <th>${array[i]}</th> 
-                <td><button onclick="editProduct(`+ i +`)">Edit</button></td> 
-                <td><button onclick="deleteProduct(`+ i +`)">Delete</button></td>
+                <td><button onclick="editProduct(` + i + `)">Edit</button></td> 
+                <td><button onclick="deleteProduct(` + i + `)">Delete</button></td>
                 </tr>`;
     }
     document.querySelector('#resultproduct').innerHTML = str;
@@ -26,8 +26,9 @@ function addProduct() {
 
 function editProduct(inDex) {
     let str = '';
-    str = `<input type="text" id="editProduct" value="` + array[inDex] + `">
-            <button onclick="saveProduct(` + inDex + `)">Save</button>`;
+    str = `<div style="width: 100%; height: 100%; border: 2px solid deepskyblue; background-color: wheat; text-align: center; padding-top: 45px; border-radius: 10px">
+            <input type="text" id="editProduct" value="` + array[inDex] + `" style="border-radius: 5px; border: none; outline: none;" placeholder="Edit content"><br><br>
+            <button onclick="saveProduct(` + inDex + `)">Save</button></div>`;
     document.querySelector('#div2').innerHTML = str;
 }
 

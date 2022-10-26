@@ -1,8 +1,9 @@
 #div1 {
     width: 40%;
+    margin: 20px;
 }
 #left {
-    width: 200px;
+    width: 300px;
     float: left;
 }
 #right {
@@ -12,12 +13,12 @@
 }
 input {
     width: 300px;
-    height: 30px;
+    height: 40px;
     font-size: 20px;
 }
 button {
     width: 100px;
-    height: 35px;
+    height: 39px;
     font-size: 24px;
     background-color: #00a600;
     color: white;
@@ -29,11 +30,13 @@ table {
     text-align: left;
 }
 th {
-    width: 300px;
+    width: 330px;
 }
 #div2 {
     width: 30%;
-    float: right;
+    height: 200px;
+    margin-left: 35%;
     margin-right: 25%;
-    margin-top: -100px;
+    margin-top: 300px;
+    position: fixed;
 }
